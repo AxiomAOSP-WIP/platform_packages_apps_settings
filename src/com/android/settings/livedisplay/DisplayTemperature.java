@@ -29,10 +29,10 @@ import android.widget.TextView;
 
 import com.android.settings.custom.preference.CustomDialogPreference;
 import com.android.settings.R;
-import com.android.internal.util.derp.MathUtils;
+import com.android.internal.util.axiom.MathUtils;
 
-import com.android.internal.derp.hardware.LiveDisplayConfig;
-import com.android.internal.derp.hardware.LiveDisplayManager;
+import com.android.internal.axiom.hardware.LiveDisplayConfig;
+import com.android.internal.axiom.hardware.LiveDisplayManager;
 
 /**
  * Preference for selection of color temperature range for LiveDisplay

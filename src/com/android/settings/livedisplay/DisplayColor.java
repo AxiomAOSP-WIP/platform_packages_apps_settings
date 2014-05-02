@@ -30,7 +30,7 @@ import com.android.settings.custom.preference.CustomDialogPreference;
 import com.android.settings.IntervalSeekBar;
 import com.android.settings.R;
 
-import com.android.internal.derp.hardware.LiveDisplayManager;
+import com.android.internal.axiom.hardware.LiveDisplayManager;
 
 /**
  * Special preference type that allows configuration of Color settings

@@ -48,10 +48,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
-import com.android.internal.derp.hardware.LineageHardwareManager;
-import com.android.internal.derp.hardware.DisplayMode;
-import com.android.internal.derp.hardware.LiveDisplayConfig;
-import com.android.internal.derp.hardware.LiveDisplayManager;
+import com.android.internal.axiom.hardware.LineageHardwareManager;
+import com.android.internal.axiom.hardware.DisplayMode;
+import com.android.internal.axiom.hardware.LiveDisplayConfig;
+import com.android.internal.axiom.hardware.LiveDisplayManager;
 
 import com.android.settings.custom.utils.SettingsHelper;
 import com.android.settings.custom.utils.ResourceUtils;
@@ -60,18 +60,18 @@ import com.android.settings.custom.preference.CustomDialogPreference;
 
 import org.derpfest.support.preferences.SystemSettingSwitchPreference;
 
-import static com.android.internal.derp.hardware.LiveDisplayManager.FEATURE_ANTI_FLICKER;
-import static com.android.internal.derp.hardware.LiveDisplayManager.FEATURE_CABC;
-import static com.android.internal.derp.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
-import static com.android.internal.derp.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
-import static com.android.internal.derp.hardware.LiveDisplayManager.FEATURE_DISPLAY_MODES;
-import static com.android.internal.derp.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
-import static com.android.internal.derp.hardware.LiveDisplayManager.FEATURE_READING_ENHANCEMENT;
-import static com.android.internal.derp.hardware.LiveDisplayManager.MODE_AUTO;
-import static com.android.internal.derp.hardware.LiveDisplayManager.MODE_DAY;
-import static com.android.internal.derp.hardware.LiveDisplayManager.MODE_NIGHT;
-import static com.android.internal.derp.hardware.LiveDisplayManager.MODE_OFF;
-import static com.android.internal.derp.hardware.LiveDisplayManager.MODE_OUTDOOR;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.FEATURE_ANTI_FLICKER;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.FEATURE_CABC;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.FEATURE_COLOR_ADJUSTMENT;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.FEATURE_COLOR_ENHANCEMENT;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.FEATURE_DISPLAY_MODES;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.FEATURE_PICTURE_ADJUSTMENT;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.FEATURE_READING_ENHANCEMENT;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.MODE_AUTO;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.MODE_DAY;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.MODE_NIGHT;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.MODE_OFF;
+import static com.android.internal.axiom.hardware.LiveDisplayManager.MODE_OUTDOOR;
 
 public class LiveDisplaySettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, SettingsHelper.OnSettingsChangeListener {
