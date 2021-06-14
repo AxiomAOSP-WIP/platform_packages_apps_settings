@@ -73,4 +73,7 @@
    <string name="sensor_block_title">Sensor block per-package</string>
    <string name="sensor_block_summary">Block access to certain sensors for some apps to save battery</string>
 
+   <!-- Max refresh rate -->
+   <string name="max_refresh_rate_title">Peak refresh rate</string>
+
 </resources>
