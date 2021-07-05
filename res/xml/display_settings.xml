@@ -181,13 +181,19 @@
             android:title="@string/tap_to_wake"
             android:summary="@string/tap_to_wake_summary"/>
 
-<<<<<<< HEAD
-=======
-        <org.derpfest.support.preferences.SystemSettingSwitchPreference
+
+        <com.axiom.settings.preference.SystemSettingSwitchPreference
             android:key="proximity_on_wake"
             android:title="@string/proximity_wake_title"
             android:summary="@string/proximity_wake_summary"
             android:defaultValue="@*android:bool/config_proximityCheckOnWakeEnabledByDefault" />
+
+        <SwitchPreference
+            android:key="high_touch_polling_rate_enable"
+            android:title="@string/high_touch_polling_rate_title"
+            android:summary="@string/high_touch_polling_rate_summary"
+            android:defaultValue="false"
+            settings:controller="com.android.settings.custom.touch.HighTouchPollingRateSettingsPreferenceController" />
 
         <SwitchPreference
             android:key="high_touch_sensitivity_enable"
@@ -196,16 +202,6 @@
             android:defaultValue="false"
             settings:controller="com.android.settings.custom.touch.HighTouchSensitivitySettingsPreferenceController" />
 
->>>>>>> 8c2063d60f9 (Settings: Add high touch sensitivity and touchscreen hovering toggles)
-        <ListPreference
-            android:key="theme"
-            android:title="@string/device_theme"
-            android:summary="@string/summary_placeholder"/>
-
-        <Preference
-            android:key="vr_display_pref"
-            android:title="@string/display_vr_pref_title"
-            android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
     </PreferenceCategory>
 
 
