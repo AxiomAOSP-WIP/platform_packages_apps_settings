@@ -60,6 +60,8 @@ public class PowerUsageSummary extends PowerUsageBase implements
     static final String KEY_BATTERY_USAGE = "battery_usage_summary";
 
     private static final String KEY_BATTERY_TEMP = "battery_temperature";
+    static final String KEY_OPTIMIZED_CHARGE = "optimized_charge_enabled";
+
 
     @VisibleForTesting
     static final int BATTERY_INFO_LOADER = 1;
@@ -176,6 +178,12 @@ public class PowerUsageSummary extends PowerUsageBase implements
         }
         mBatteryTipPreferenceController.restoreInstanceState(icicle);
         updateBatteryTipFlag(icicle);
+
+
+
+        if (!getContext().getResources().getBoolean(R.bool.config_show_battery_health)) {
+            removePreference(KEY_BATTERY_HEALTH);
+        }
     }
 
     @Override
@@ -309,5 +317,13 @@ public class PowerUsageSummary extends PowerUsageBase implements
     }
 
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider(R.xml.power_usage_summary);
+            new BaseSearchIndexProvider(R.xml.power_usage_summary) {
+                @Override
+                public List<String> getNonIndexableKeys(Context context) {
+                    List<String> keys = super.getNonIndexableKeys(context);
+                    if (!context.getResources().getBoolean(R.bool.config_show_battery_health))
+                        keys.add(KEY_BATTERY_HEALTH);
+                    return keys;
+                }
+            };
 }
