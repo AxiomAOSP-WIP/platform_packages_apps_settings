@@ -27,10 +27,10 @@
         android:title="@string/navbar_category">
 
         <ccom.axiom.settings.preference.SystemSettingSwitchPreference
-            android:key="navigation_bar_gestural_narrow"
-            android:title="@string/gestural_navbar_narrow_title"
-            android:summary="@string/gestural_navbar_narrow_summary"
-            android:defaultValue="false" />
+          android:key="navigation_bar_ime_space"
+            android:title="@string/navigation_bar_ime_space_title"
+            android:entries="@array/navigation_bar_ime_space_entries"
+            android:entryValues="@array/navigation_bar_ime_space_values" />
     </PreferenceCategory>
 
     <PreferenceCategory
