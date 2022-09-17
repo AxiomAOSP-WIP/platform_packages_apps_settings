@@ -49,7 +49,6 @@
 
    <!-- Navigation bar IME space -->
       <string name="default_string">Default</string>
-      <string name="navbar_category">Navigation</string>
       <string name="hidden_string">Hidden</string>
       <string name="navigation_bar_ime_space_title">Space under the keyboard</string>
       <string name="navigation_bar_ime_space_value_narrow">Narrow</string>
