@@ -90,7 +90,7 @@
         settings:controller="com.android.settings.notification.NotificationVolumePreferenceController"/>
 
     <!-- Link ringtone and notification volumes -->
-    <com.android.settings.custom.preference.SecureSettingSwitchPreference
+    <com.axiom.settings.preference.SecureSettingSwitchPreference
         android:key="volume_link_notification"
         android:title="@string/volume_link_notification_title"
         android:defaultValue="true"
@@ -238,7 +238,7 @@
         android:title="@string/volume_dialog_category">
 
         <!-- Volume panel to left -->
-        <com.android.settings.custom.preference.SystemSettingSwitchPreference
+        <com.axiom.settings.preference.SystemSettingSwitchPreference
             android:key="volume_panel_on_left"
             android:title="@string/volume_panel_on_left_title"
             android:summary="@string/volume_panel_on_left_summary"
