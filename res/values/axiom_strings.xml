@@ -119,4 +119,11 @@
     <string name="torch_long_press_power_gesture_title">Long press for torch</string>
     <string name="torch_long_press_power_gesture_desc">Activate the torch by long pressing the power button while the display is off</string>
 
+     <!-- Battery Helath -->
+     <string name="designed_battery_capacity">Designed Battery Capacity</string>
+     <string name="current_battery_capacity">Current Battery Capacity</string>
+     <string name="battery_charge_cycles">Battery Charge Cycles</string>
+     <string name="battery_current_status">Battery status</string>
+
+
 </resources>
